@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Teach Book Management System</string>
+    <string name="count1">&lt;1k</string>
+    <string name="count2">1k-2k</string>
+    <string name="count3">2k-3k</string>
+    <string name="count4">3k-4k</string>
+    <string name="count5">&gt;4k</string>
+</resources>

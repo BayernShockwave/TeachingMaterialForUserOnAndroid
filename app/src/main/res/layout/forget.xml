@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/forget_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/forget"
+            android:text="找回密码"
+            android:layout_marginTop="25dp"
+            android:textSize="@dimen/zehn_size"
+            android:layout_marginLeft="75dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <FrameLayout
+            android:id="@+id/uid_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/userlogin"
+                android:visibility="visible"></ImageView>
+
+            <EditText
+                android:id="@+id/uid"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:hint="请输入用户名:"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"></EditText>
+
+            <Button
+                android:id="@+id/uidclear"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/delete"
+                android:visibility="visible"></Button>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/uem_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/uid_layout"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/email"
+                android:visibility="visible"></ImageView>
+
+            <EditText
+                android:id="@+id/uem"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:hint="请输入邮箱:"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"></EditText>
+
+            <Button
+                android:id="@+id/uemclear"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/delete"
+                android:visibility="visible"></Button>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/uuni_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/uem_layout"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/uni"
+                android:visibility="visible"></ImageView>
+
+            <Spinner
+                android:id="@+id/uuni"
+                android:entries="@array/uni"
+                android:layout_marginLeft="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Spinner>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/uname_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/uuni_layout"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/userlogin"
+                android:visibility="visible"></ImageView>
+
+            <EditText
+                android:id="@+id/uname"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:hint="请输入真实姓名:"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"></EditText>
+
+            <Button
+                android:id="@+id/unameclear"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/delete"
+                android:visibility="visible"></Button>
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/sendemail"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/uuni_layout"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="125dp"
+            android:text="发送邮件"></Button>
+
+        <Button
+            android:id="@+id/clean"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/uuni_layout"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="125dp"
+            android:text="清空"></Button>
+
+        <TextView
+            android:id="@+id/backem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/forget"
+            android:textSize="@dimen/drei_size"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="400dp"
+            android:text="您将在24小时内收到回复邮件"></TextView>
+
+        <TextView
+            android:id="@+id/dcsz"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/backem"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="50dp"
+            android:text="The app was created by Dick Chen and Stone Zhang"
+            android:textSize="@dimen/eins_size"></TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

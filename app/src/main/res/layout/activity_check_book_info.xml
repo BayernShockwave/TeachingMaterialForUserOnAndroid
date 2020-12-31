@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainxml"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckBookInfo">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:columnCount="7"
+        android:rowCount="7"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/usediscipline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="使用专业：" />
+
+        <RadioGroup
+            android:id="@+id/rg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/cs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="计算机科学" />
+
+            <RadioButton
+                android:id="@+id/machine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="机械设计制造" />
+
+            <RadioButton
+                android:id="@+id/english"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="专业英语" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/usegrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="right"
+            android:text="使用年级：" />
+
+        <RadioGroup
+            android:id="@+id/rg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/g1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大一" />
+
+            <RadioButton
+                android:id="@+id/g2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大二" />
+
+            <RadioButton
+                android:id="@+id/g3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大三" />
+
+            <RadioButton
+                android:id="@+id/g4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大四" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/booktype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="right"
+            android:text="教材类型：" />
+
+        <RadioGroup
+            android:id="@+id/rg3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/basebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="基础学科" />
+
+            <RadioButton
+                android:id="@+id/officebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="专业课程" />
+
+            <RadioButton
+                android:id="@+id/referencebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="工具书" />
+
+            <RadioButton
+                android:id="@+id/outclassbook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="延伸" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bookarea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="right"
+            android:text="教材分区：" />
+
+        <RadioGroup
+            android:id="@+id/rg4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/area1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1区" />
+
+            <RadioButton
+                android:id="@+id/area2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2区" />
+
+            <RadioButton
+                android:id="@+id/area3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3区" />
+
+            <RadioButton
+                android:id="@+id/area4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4区" />
+
+            <RadioButton
+                android:id="@+id/area5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5区" />
+
+            <RadioButton
+                android:id="@+id/area6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6区" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bookstock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="right"
+            android:text="教材库存：" />
+
+        <RadioGroup
+            android:id="@+id/rg5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/stock1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/count1" />
+
+            <RadioButton
+                android:id="@+id/stock2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/count2" />
+
+            <RadioButton
+                android:id="@+id/stock3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/count3" />
+
+            <RadioButton
+                android:id="@+id/stock4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/count4" />
+
+            <RadioButton
+                android:id="@+id/stock5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/count5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bookpublish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="right"
+            android:text="出版社：" />
+
+        <RadioGroup
+            android:id="@+id/rg6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/publish1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="外研社" />
+
+            <RadioButton
+                android:id="@+id/publish2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="机械工业出版社" />
+
+            <RadioButton
+                android:id="@+id/publish3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="高教出版社" />
+
+        </RadioGroup>
+
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridLayout"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="450dp"
+        app:layout_constraintStart_toStartOf="@+id/gridLayout"
+        app:layout_constraintTop_toTopOf="@+id/gridLayout">
+
+        <Button
+            android:id="@+id/okcheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定查询" />
+
+        <Button
+            android:id="@+id/cleancheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消选择" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dcsz"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="575dp"
+        android:text="The app was created by Dick Chen and Stone Zhang"
+        android:textSize="@dimen/eins_size"
+        app:layout_constraintEnd_toEndOf="@+id/gridLayout"
+        app:layout_constraintTop_toTopOf="@+id/gridLayout"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

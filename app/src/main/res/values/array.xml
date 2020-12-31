@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string-array name="uni">
+        <item>上海电力大学</item>
+        <item>上海交通大学</item>
+        <item>复旦大学</item>
+        <item>同济大学</item>
+        <item>华东师范大学</item>
+    </string-array>
+    <string-array name="type">
+        <item>基础学科</item>
+        <item>专业课程</item>
+        <item>工具书</item>
+        <item>延伸</item>
+    </string-array>
+    <string-array name="area">
+        <item>1区</item>
+        <item>2区</item>
+        <item>3区</item>
+        <item>4区</item>
+        <item>5区</item>
+        <item>6区</item>
+    </string-array>
+    <string-array name="grade">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>

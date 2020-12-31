@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.teachbookmanagementsystem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DeleteInbuy"></activity>
+        <activity android:name=".DeleteDisciplien" />
+        <activity android:name=".ModifyInbuyResult" />
+        <activity android:name=".ModifyInbuy" />
+        <activity android:name=".ModifyDisciplineResult" />
+        <activity android:name=".ModifyDiscipline" />
+        <activity android:name=".AddInbuy" />
+        <activity android:name=".AddDiscipline" />
+        <activity android:name=".CheckInbuyInfo" />
+        <activity android:name=".CheckDisciplineInfo" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ForgetActivity" />
+        <activity android:name=".UserMainFrame" />
+        <activity android:name=".CheckBookInfo" />
+        <activity android:name=".BookInfo" />
+        <activity android:name=".AddBook" />
+        <activity android:name=".ModifyBook" />
+        <activity android:name=".ModifyBookResult" />
+        <activity android:name=".DeleteBook" />
+    </application>
+
+</manifest>

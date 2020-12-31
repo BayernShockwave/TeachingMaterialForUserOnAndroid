@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:text="请输入专业编号"
+        android:textSize="@dimen/zehn_size"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="或输入专业名称"
+        android:textSize="@dimen/zehn_size"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="专业编号"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/updatedisciplineid"
+        android:hint="请输入专业编号"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="专业名称"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/updatedisciplinename"
+        android:hint="请输入专业名称"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="专业信息"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/disciplineinfo"
+        android:text=""
+        android:layout_width="fill_parent"
+        android:layout_height="150dp" />
+
+    <Button
+        android:id="@+id/confirmupdate"
+        android:text="更新"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/cancelupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="-48dp"
+        android:text="清空" />
+
+    <TextView
+        android:id="@+id/dcsz"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drei_layout"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="10dp"
+        android:text="The app was created by Dick Chen and Stone Zhang"
+        android:textSize="@dimen/eins_size"></TextView>
+
+</LinearLayout>
